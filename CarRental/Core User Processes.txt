@@ -1,0 +1,35 @@
+
+Desktop App:
+
+Manage cars in stock
+Check rental status of cars
+Rent a reserved car to a customer
+Accept a returned car from a customer
+See list of customers and their history
+
+Web App:
+
+See available cars and their per-day rental price (all or per-category)
+Reserve a car
+Cancel a reservation
+See rental history as a customer
+
+----------------------------------------------------------------
+
+Business Engines:
+
+CarRentalEngine
+	Is car currently rented
+	And by whom
+
+Services:
+	InventoryService
+		Car CRUD - DAL
+		SeeAvailableCars - DAL
+	RentalService
+		RentCarToCustomer
+		AcceptCarReturn
+		GetCustomerRentalHistory
+		ReserveCar
+		CancelReservation
+		GetCurrentRentals
